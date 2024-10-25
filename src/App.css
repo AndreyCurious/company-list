@@ -1,0 +1,85 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.table thead tr {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+#selected {
+  background-color: #d3d3d3;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table td {
+  color: #333;
+}
+
+.button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:disabled {
+  opacity: 0.4;
+}
+
+.button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+  background-color: #388e3c;
+}
+
+h1 {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
